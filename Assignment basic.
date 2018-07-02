@@ -1,0 +1,61 @@
+1.Write a program take input from user and check whether it is and greater 50.
+>>> x=int(input('enter a value'))
+enter a value10
+>>> print(x%2==0 and x>50) // if one of the condition is false,the main answer will be false.
+False
+
+2.Write a program take two float as a number and create calculator.
+>>> x=float(input('enter a value'))
+enter a value34.8
+>>> y=float(input('enter a value'))
+enter a value8.76
+>>> x+y
+43.559999999999995
+>>> print('add is :',x+y)
+add is : 43.559999999999995
+>>> x=float(input('enter a value'))
+enter a value34.8
+>>> y=float(input('enter a value'))
+enter a value8.786
+>>> print('add is :',x+y)
+add is : 43.586
+>>> print('sub is :',x-y)
+sub is : 26.013999999999996
+>>> print('mul is :',x*y)
+mul is : 305.7528
+>>> print('div is :',x/y)
+div is : 3.960846801730025
+
+3.Write a program take two strings from user and perform concatenation 'hello world'.
+>>> x='hello '
+>>> y='world'
+>>> x+y
+'hello world'
+
+4.Write a program take two input from user and check whether it is divisle by 17.
+>>> x=int(input('enter a value'))
+enter a value34
+>>> print(x%17==0)
+True
+>>> y=int(input('enter a value'))
+enter a value44
+>>> print(y%17==0)
+False
+
+5.Write a program take two input from user and calculate the exponential.
+>>> x=int(input('enter a value'))
+enter a value10
+>>> y=int(input('enter a value'))
+enter a value3
+>>> x**y
+1000
+
+6.Write a program take input from user and perform division which gives answer in integer form.
+>>> x=int(input('enter a value'))// to get the answer in integer we have to use interger or floor divion opertor.
+enter a value15
+>>> y=int(input('enter a value'))
+enter a value3
+>>> x//y 
+5
+
+PRACTICE...!!!
