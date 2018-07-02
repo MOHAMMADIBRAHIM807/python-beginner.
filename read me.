@@ -1,0 +1,26 @@
+Python is an interpreted high-level programming language for general-purpose programming.
+Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace.
+
+Python Arithmetic Operators are as follows:
++	Addition	        x + y	
+-	Subtraction	      x - y	
+*	Multiplication	  x * y	
+/	Division	        x / y	
+%	Modulus	          x % y	(it return the remainder value.)
+**	Exponentiation	x ** y	 
+//	Floor division or integer divion	x // y ( it will give us value in integer instead of floating values.)
+
+Python Comparison Operators are as follow:
+==	Equal	                   x == y	
+!=	Not equal	               x != y	
+>	Greater than	              x > y	
+<	Less than	                  x < y	
+>=	Greater than or equal to	x >= y	
+<=	Less than or equal to     x <= y
+
+Python Logical Operators are as follows:
+and 	Returns True if both statements are true	                  x < 5 and  x < 10	
+or	  Returns True if one of the statements is true	              x < 5 or x < 4	
+not 	Reverse the result, returns False if the result is true	not(x < 5 and x < 10)
+
+THE ABOVE OPERATORS ARE BASICS,THERE ARE MANY MORE OPERATORS.
