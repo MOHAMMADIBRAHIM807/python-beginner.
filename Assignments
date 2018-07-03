@@ -58,4 +58,87 @@ enter a value3
 >>> x//y 
 5
 
-PRACTICE...!!!
+CONDITIONAL AND LOOP STATEMENTS.
+
+1.Write a program to take a number from user and print whether the number is even or odd using conditional statement.
+>>> x=int(input('enter a value'))
+enter a value12
+>>> if(x%2==0):
+	print("yes it is even")
+	
+yes it is even
+
+2.Write a program to take percentage from user and print first class if percentage is above 60 using conditional statement.
+>>> per=float(input('enter a per'))
+enter a per73
+>>> if(per>=60):
+	print("first class")
+	
+first class
+
+3.Write a program to take mrp from user of a product and display the final price after calculating with different schemes: 40% off on mrp,60% off on mrp and 80% off on mrp.
+>>> mrp,s=int(input('enter a mrp')),int(input('enter a scheme'))
+enter a mrp100
+enter a scheme1
+>>> if(s==1):
+	print("final price",mrp*0.4)
+	
+final price 40.0
+
+4.Write a programto print "python" 5 times.
+>>> a=1
+>>> while(a<=5):
+	print("python")
+	a=a+1
+	
+python
+python
+python
+python
+python
+
+5.Write a programto print 'n' naturals number.
+>>> no=int(input('enter a natural number'))
+enter a natural number10
+>>> a=1
+>>> while(a<=no):
+	print("a=",a)
+	a=a+1
+	
+a= 1
+a= 2
+a= 3
+a= 4
+a= 5
+a= 6
+a= 7
+a= 8
+a= 9
+a= 10
+
+6.Write a programto print 10 to 1 numbers.
+>>> a=11
+>>> while(a>1):
+	a=a-1
+	print("no=",a)
+	
+no= 10
+no= 9
+no= 8
+no= 7
+no= 6
+no= 5
+no= 4
+no= 3
+no= 2
+no= 1
+
+#Swaping of numbers without using 3rd variable.
+>>> a,b=int(input('enter a no.1')),int(input('enter a no.2'))
+enter a no.1 10
+enter a no.2 20
+>>> a,b=b,a
+>>> print("after swap",a,b)
+('after swap', 20, 10)
+
+PRACTICE..!!!
