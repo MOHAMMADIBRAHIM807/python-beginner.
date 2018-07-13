@@ -1,0 +1,107 @@
+1. wap to take input from user for name mobile no.,address.
+s=input("ENTER YOUR NAME\t")
+
+for x in s:
+    if not(x.isalpha() or x==' '):
+        print("retry")
+        s=input( " enter the name again\t")
+        x=0
+n=input("ENTER YOUR CONTACT NUMBER\t")
+
+while (not(n.isdigit()) or len(n)!=10):
+      print("enter valid 10 digit number")
+      n=(input("ENTER YOUR CONTACT NUMBER\t"))
+
+a=input("ENTER YOUR ADDRESS\t")
+
+for x in a:
+    if not(x.isalnum() or x==' '):
+        print("ERROR")
+        s=input( " enter the addressagain\t")
+        x=0
+
+2. wap to take two dice guesses.
+
+from random import randint
+no1=randint(1,6)
+no2=randint(1,6)
+
+x,y=int(input(" guess 1 no\t")),int(input(" guess 2 no\t"))
+for i in range(6):
+    
+    if(no1==x and no2==y):
+        print("congats!")
+        break
+    elif(i==5):
+        print("sorry out of chances numbers are",no1," ",no2)
+    else:
+        print(" Chance\t", i+2)
+        s,t=x,y
+        x,y=int(input(" guess 1 no\t")),int(input(" guess 2 no\t"))
+        if(s==x and t==y):
+            print("you have entered same values,try again")
+ 3.WAP to take square root.
+ 
+
+num=float(input("enter a number\t"))
+
+if(num-int(num)==0.5):
+
+    num=int(num+1)
+else:
+
+    num=round(num)
+
+from math import sqrt
+
+print ("square root of",num ,"is",sqrt(num))
+
+4. WAP to take input fro user and print largest,smallest and total average.
+
+
+
+n=int(input("enter numbers\t"))
+x=int(input("enter a number"))
+grt=sml=total=x
+avg=0
+
+for i in range(n-1):
+
+    x=int(input("enter   number"))
+    if(x>grt):
+
+        grt=x
+
+    if(x<sml):
+
+        sml=x
+
+
+    total+=x
+
+avg=total/n
+
+print("greatest number is ",grt)
+print("smallest number is",sml)
+
+print("total is ",total)
+
+print("average is",avg)
+
+5. WAP to find factorial.
+x=int(input("enter number\t"))
+fact=1
+for i in range(2,x+1):
+    fact*=i
+print("factorial of number is ",fact)
+
+or
+
+num = int(input("enter a number: "))
+ 
+fac = 1
+ 
+for i in range(1, num + 1):
+    fac = fac * i
+ 
+print("factorial of ", num, " is ", fac)
