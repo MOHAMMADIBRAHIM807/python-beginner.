@@ -1,0 +1,73 @@
+1. WAP to print armstrong no between 1 to 1000
+
+for i in range(1,1001):
+    x,s=i,0
+    while(x!=0):
+        x,d=divmod(x,10)
+        s=s+d**3
+    if(s==i):
+        print(i)
+        
+2.WAP to print n natural numbers
+
+n=int(input("entre a number\t"))
+i=1
+while(i<=n):
+    print(i)
+    i=i+1
+
+3.WAP print 10 to 1 using while 
+
+print("\nto print reverse numbers")
+i=10
+while(i>0):
+     print(i)
+     i=i-1
+     
+     
+4.WAP to check prime no.
+
+n=int(input("enter a number"))
+flag=0
+for i in range (2,n//2):
+    if(n%i==0):
+        flag=1
+        break
+if(flag==0):
+    print("number is prime")
+else:
+    print("number is not prime")
+    
+    
+5. WAP for patterns.
+
+for i in range(4):
+    for j in range(1,4):
+        print(j,end='')
+    print()    
+print()
+for i in range(4):
+    for j in range(1,4):
+        if(i%2==0):
+            print('$',end='')
+        else:
+            print('*',end='')
+    print()       
+    
+ 6.WAP print all odd no between 13 to 123
+    
+for i in range (13,124,2):
+    print (i)
+    
+ 7. WAP to print natural numbers from 100 to 1 using for loop
+for i in range (100,0,-1):
+    print(i)
+    
+ 8.WAP for prime no.
+ j=0
+for i in range(1,101):
+ for j in range(2,i//2):
+  if(i%j==0):
+    break
+ if(j==i-1):
+   print(i)
