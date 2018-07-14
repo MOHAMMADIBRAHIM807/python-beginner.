@@ -1,9 +1,9 @@
 1. wap to take input from user for name mobile no.,address.
 
 s=input("ENTER YOUR NAME\t")
-
+x=0
 while(x<len(s)):
-    if not(x.isalpha() or x==' '):
+    if not(s[x].isalpha() or x==' '):
         print("retry")
         s=input( " enter the name again\t")
         x=0
@@ -22,6 +22,7 @@ for x in a:
         print("ERROR")
         s=input( " enter the addressagain\t")
         x=0
+
 
 2. wap to take two dice guesses.
 
