@@ -1,11 +1,14 @@
 1. wap to take input from user for name mobile no.,address.
+
 s=input("ENTER YOUR NAME\t")
 
-for x in s:
+while(x<len(s)):
     if not(x.isalpha() or x==' '):
         print("retry")
         s=input( " enter the name again\t")
         x=0
+    else:
+        x+=1
 n=input("ENTER YOUR CONTACT NUMBER\t")
 
 while (not(n.isdigit()) or len(n)!=10):
@@ -105,3 +108,15 @@ for i in range(1, num + 1):
     fac = fac * i
  
 print("factorial of ", num, " is ", fac)
+
+6.longest word.
+
+l=[]
+y=0
+for i in range(5):
+    x=input("enter a word")
+    l.append(x)
+    if(len(x)>y):
+     y=i
+print("longest word is",l[y])
+
