@@ -1,0 +1,49 @@
+1. Max and min value.
+d={}
+d.setdefault('MATHS',int(input("enter marks of maths:")))
+max=min=d.get('MATHS')
+d.setdefault('PHY',int(input("enter marks of physics:")))
+d.setdefault('MECH',int(input("enter marks of mech:")))
+d.setdefault('CHEM',int(input("enter marks of chem:")))
+d.setdefault('CTL',int(input("enter marks of ctl:")))
+for each in d.values():
+    if(each>max):
+        max=each
+    if(min>each):
+        min=each
+print("max value is :",max)
+print("minimum value is :",min)
+
+2.combine two dictionaries.
+d1={'a':10,'b':20,'c':30,'d':40}
+d2={'c':12,'e':15,'f':18}
+for each in d2.keys():
+    if each in d1.keys():
+        d1[each]=d1[each]+d2[each]
+    else:
+        d1.setdefault(each,d2[each])
+print(d1)
+
+3. Highest three values in dict.
+d={'a': 10, 'b': 20, 'c': 42, 'd': 40, 'e': 15, 'f': 18}
+l=[]
+l=list( d.values())
+l.sort()
+l.reverse()
+print(l[0],',',l[1],',',l[2])
+
+4. Armstrong no.
+def armstrong (no):
+    x=no
+    s=0
+    while(x!=0):
+        x,d=divmod(x,10)
+        s=s+d**3
+    return s
+
+no=int(input("ENTER A NUMBER"))
+r=armstrong(no)
+if(r==no):
+    print("number is armstrong")
+else:
+    print("number is not armstrong")
